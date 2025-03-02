@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Swap</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <% if (success_msg) { %>
+    <div class="flash-success"><%= success_msg %></div>
+  <% } %>
+  <% if (error_msg) { %>
+    <div class="flash-error"><%= error_msg %></div>
+  <% } %>
+  
+  <header>
+    <h1>Skill Swap</h1>
+  </header>
+  
+  <main>
+    <p>Welcome to the Skill Swap platform!</p>
+    <a href="/auth/register">Register</a> | <a href="/auth/login">Login</a>
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
+

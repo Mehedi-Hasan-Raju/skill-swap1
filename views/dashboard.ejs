@@ -1,0 +1,7 @@
+<h1>Skill Dashboard</h1>
+<a href="/skill/add">Add Skill</a>
+<ul>
+  <% skills.forEach(skill => { %>
+    <li><%= skill.title %> - <%= skill.description %> (by <%= skill.user.name %>)</li>
+  <% }); %>
+</ul>
